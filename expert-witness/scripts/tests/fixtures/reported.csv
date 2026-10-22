@@ -1,0 +1,12 @@
+table,panel,row,column,quantity,value,digits,stars
+Table 3,A,Treated,(1),coef,-2.88,2,**
+Table 3,A,Treated,(1),se,(0.95),2,
+Table 3,A,Treated,(2),coef,0.02,2,
+Table 3,A,Treated,(3),coef,0.02,2,
+Table 3,A,Treated,(4),coef,0.02,2,
+Table 3,A,Observations,(1),n,"2,379",0,
+Table 3,A,Observations,(2),n,"2,362",0,
+Table 3,B,Treated,(1),coef,0.37,2,***
+Table 3,B,Treated,(2),coef,0.41,2,*
+Table 2,,Used VSA,Treated,mean,0.58,2,
+Table 2,,p-value,Treated,p,<0.001,3,

@@ -1,0 +1,17 @@
+# Disclosure-checker allow list, read by disclosure_check.py and by the pre-commit hook.
+#
+# One entry per line:   rule:pattern|reason
+# rule is one of the checker's rules (email, phone, long-id, course-code, term, small-cell, quote,
+# listing). The entry suppresses hits of that rule only, and only those whose printed excerpt
+# contains the pattern literally (case-sensitive), so an allowance for one rule never silences
+# another. The older form pattern|reason, with no rule, applies to every rule; prefer the scoped
+# form. The reason is required: one line saying why the hit is not a disclosure. Lines starting
+# with # are comments. Keep each entry narrow enough to defend line by line in
+# ew/disclosure/CHECK.md (disclosure.md, checklist item 10). Examples, commented out:
+#   quote:Among sections of the same course|a sentence of the paper, not of the data
+#   listing:1 |        245|a tabulation of grade bands (aggregate counts), not rows of data
+#
+# Seeded by init_report.py: census.py records file sizes as JSON integers, and a size of a
+# megabyte or more is a run of 7+ digits that the long-id rule flags.
+long-id:"bytes":|file sizes recorded in ew/census/census.json, not identifiers
+long-id:"total_bytes":|total package size recorded in ew/census/census.json, not an identifier

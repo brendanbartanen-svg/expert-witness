@@ -1,0 +1,1 @@
+This file is the target of the erase line in master.do; it must survive the census.

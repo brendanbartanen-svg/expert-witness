@@ -1,0 +1,2 @@
+# Fixture allow list: suppresses exactly one planted hit, the course-code one.
+ECON 201|a block label the paper itself prints (fixture)
